@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_A"
 
 #include <iostream>
-#include "tree\SegmentTree\rmqsegtree.cpp"
+#include "../tree/SegmentTree/rmqsegtree.cpp"
 
 
 void solve(){
