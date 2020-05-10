@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 template<typename T=long long>
 struct edge {

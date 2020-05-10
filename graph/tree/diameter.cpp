@@ -1,19 +1,9 @@
 //http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_5_A&lang=jp
+#pragma once
 #include <vector>
-#include <iostream>
 #include <utility>
 
-template<typename T=long long>
-struct edge {
-public:
-    int from;
-    int to;
-    T cost;
-    edge(int from,int to,T cost):from(from),to(to),cost(cost){}
-};
-
-template<typename T>
-using graph = std::vector<std::vector<edge<T>>>;
+#include "../graph_template.cpp"
 
 //G:グラフを管理してる型（vector<vector>やvector<set>を指定する）
 //T:辺のコスト
@@ -54,22 +44,3 @@ public:
         return maxdist;
     }
 };
-
-void solve() {
-    int n;
-    std::cin>>n;
-    graph<int> G(n);
-    for(int i = 0;i < n-1;++i) {
-        int s,t,w;
-        std::cin>>s>>t>>w;
-        G[s].emplace_back(s,t,w);
-        G[t].emplace_back(t,s,w);
-    }
-    TreeDiam<int> td(G);
-    std::cout<<td.diameter()<<std::endl;
-}
-
-int main() {
-    solve();
-    return 0;
-}
