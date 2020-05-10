@@ -3,7 +3,6 @@
 #include <iostream>
 #include "../tree/SegmentTree/rmqsegtree.cpp"
 
-
 void solve(){
     int n,q;
     std::cin>>n>>q;
