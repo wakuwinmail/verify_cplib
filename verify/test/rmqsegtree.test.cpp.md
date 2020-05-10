@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#098f6bcd4621d373cade4e832627b4f6">test</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/rmqsegtree.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-09 20:15:35+09:00
+    - Last commit date: 2020-05-10 14:59:00+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_A">https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_A</a>
@@ -51,7 +51,6 @@ layout: default
 
 #include <iostream>
 #include "../tree/SegmentTree/rmqsegtree.cpp"
-
 
 void solve(){
     int n,q;
@@ -127,7 +126,6 @@ public:
     }
 };
 #line 5 "test/rmqsegtree.test.cpp"
-
 
 void solve(){
     int n,q;
