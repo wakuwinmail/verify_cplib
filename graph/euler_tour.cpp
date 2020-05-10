@@ -2,6 +2,8 @@
 #include <vector>
 #include <utility>
 
+#include "graph_template.cpp"
+
 struct EulerTour{
 private:
     int sz;
