@@ -1,4 +1,5 @@
 //https://onlinejudge.u-aizu.ac.jp/problems/2871
+#pragma once
 #include <vector>
 #include <utility>
 
