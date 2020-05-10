@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: graph/graph_template.cpp
+# :question: graph/graph_template.cpp
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#f8b0b924ebd7046dbfa85a856e4682c8">graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/graph/graph_template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 15:39:34+09:00
+    - Last commit date: 2020-05-10 16:07:24+09:00
 
 
 
@@ -39,10 +39,12 @@ layout: default
 ## Required by
 
 * :heavy_check_mark: <a href="euler_tour.cpp.html">graph/euler_tour.cpp</a>
+* :x: <a href="tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
 
 
 ## Verified with
 
+* :x: <a href="../../verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
 * :heavy_check_mark: <a href="../../verify/verify/euler_tour.test.cpp.html">verify/euler_tour.test.cpp</a>
 
 
@@ -51,17 +53,42 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+#pragma once
 #include <vector>
-using Graph=std::vector<std::vector<int>>;//無向グラフ
+template<typename T=long long>
+struct edge {
+public:
+    int from;
+    int to;
+    T cost;
+    edge(int from,int to,T cost):from(from),to(to),cost(cost){}
+};
+
+template<typename T>
+using graph = std::vector<std::vector<edge<T>>>;//重み付きグラフ
+
+using Graph = std::vector<std::vector<int>>;//重み無しグラフ
 ```
 {% endraw %}
 
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "graph/graph_template.cpp"
+#line 2 "graph/graph_template.cpp"
 #include <vector>
-using Graph=std::vector<std::vector<int>>;//無向グラフ
+template<typename T=long long>
+struct edge {
+public:
+    int from;
+    int to;
+    T cost;
+    edge(int from,int to,T cost):from(from),to(to),cost(cost){}
+};
+
+template<typename T>
+using graph = std::vector<std::vector<edge<T>>>;//重み付きグラフ
+
+using Graph = std::vector<std::vector<int>>;//重み無しグラフ
 
 ```
 {% endraw %}

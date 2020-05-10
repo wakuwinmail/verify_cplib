@@ -47,7 +47,7 @@ layout: default
 ### graph
 
 * :heavy_check_mark: <a href="library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
-* :heavy_check_mark: <a href="library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
+* :question: <a href="library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
 * :warning: <a href="library/graph/pertial_persistent_unionfind.cpp.html">graph/pertial_persistent_unionfind.cpp</a>
 * :warning: <a href="library/graph/potentialized_unionfind.cpp.html">graph/potentialized_unionfind.cpp</a>
 * :warning: <a href="library/graph/strongly_conneted_components.cpp.html">graph/strongly_conneted_components.cpp</a>
@@ -58,7 +58,7 @@ layout: default
 
 ### graph/tree
 
-* :warning: <a href="library/graph/tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
+* :x: <a href="library/graph/tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
 
 
 <div id="7e676e9e663beb40fd133f5ee24487c2"></div>
@@ -126,6 +126,7 @@ layout: default
 
 ## Verify Files
 
+* :x: <a href="verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
 * :heavy_check_mark: <a href="verify/verify/euler_tour.test.cpp.html">verify/euler_tour.test.cpp</a>
 * :heavy_check_mark: <a href="verify/verify/lazysegtree.test.cpp.html">verify/lazysegtree.test.cpp</a>
 * :heavy_check_mark: <a href="verify/verify/rmqsegtree.test.cpp.html">verify/rmqsegtree.test.cpp</a>

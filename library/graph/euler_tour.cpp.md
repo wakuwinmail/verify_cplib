@@ -31,14 +31,14 @@ layout: default
 
 * category: <a href="../../index.html#f8b0b924ebd7046dbfa85a856e4682c8">graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/graph/euler_tour.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 15:39:34+09:00
+    - Last commit date: 2020-05-10 16:07:24+09:00
 
 
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="graph_template.cpp.html">graph/graph_template.cpp</a>
+* :question: <a href="graph_template.cpp.html">graph/graph_template.cpp</a>
 
 
 ## Verified with
