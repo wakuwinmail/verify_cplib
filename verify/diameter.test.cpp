@@ -6,6 +6,10 @@
 void solve() {
     int n;
     std::cin>>n;
+    if(n<=2) {
+        std::cout<<0<<std::endl;
+        return;
+    }
     graph<int> G(n);
     for(int i = 0;i < n-1;++i) {
         int s,t,w;
