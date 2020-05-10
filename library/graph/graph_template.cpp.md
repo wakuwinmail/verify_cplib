@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :question: graph/graph_template.cpp
+# :heavy_check_mark: graph/graph_template.cpp
 
 <a href="../../index.html">Back to top page</a>
 
@@ -39,12 +39,12 @@ layout: default
 ## Required by
 
 * :heavy_check_mark: <a href="euler_tour.cpp.html">graph/euler_tour.cpp</a>
-* :x: <a href="tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
+* :heavy_check_mark: <a href="tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
 
 
 ## Verified with
 
-* :x: <a href="../../verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
+* :heavy_check_mark: <a href="../../verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
 * :heavy_check_mark: <a href="../../verify/verify/euler_tour.test.cpp.html">verify/euler_tour.test.cpp</a>
 
 

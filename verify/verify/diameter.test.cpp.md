@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :x: verify/diameter.test.cpp
+# :heavy_check_mark: verify/diameter.test.cpp
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#e8418d1d706cd73548f9f16f1d55ad6e">verify</a>
 * <a href="{{ site.github.repository_url }}/blob/master/verify/diameter.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 18:20:02+09:00
+    - Last commit date: 2020-05-10 18:31:44+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/5/GRL_5_A">https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/5/GRL_5_A</a>
@@ -39,8 +39,8 @@ layout: default
 
 ## Depends on
 
-* :question: <a href="../../library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
-* :x: <a href="../../library/graph/tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
+* :heavy_check_mark: <a href="../../library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
+* :heavy_check_mark: <a href="../../library/graph/tree/diameter.cpp.html">graph/tree/diameter.cpp</a>
 
 
 ## Code
@@ -56,6 +56,10 @@ layout: default
 void solve() {
     int n;
     std::cin>>n;
+    if(n<=2) {
+        std::cout<<0<<std::endl;
+        return;
+    }
     graph<int> G(n);
     for(int i = 0;i < n-1;++i) {
         int s,t,w;
@@ -146,6 +150,10 @@ public:
 void solve() {
     int n;
     std::cin>>n;
+    if(n<=2) {
+        std::cout<<0<<std::endl;
+        return;
+    }
     graph<int> G(n);
     for(int i = 0;i < n-1;++i) {
         int s,t,w;

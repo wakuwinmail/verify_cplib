@@ -40,7 +40,7 @@ layout: default
 ## Depends on
 
 * :heavy_check_mark: <a href="../../library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
-* :question: <a href="../../library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
+* :heavy_check_mark: <a href="../../library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
 * :heavy_check_mark: <a href="../../library/tree/SegmentTree/lazysegtree.cpp.html">tree/SegmentTree/lazysegtree.cpp</a>
 
 

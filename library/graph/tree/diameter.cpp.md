@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: graph/tree/diameter.cpp
+# :heavy_check_mark: graph/tree/diameter.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -38,12 +38,12 @@ layout: default
 
 ## Depends on
 
-* :question: <a href="../graph_template.cpp.html">graph/graph_template.cpp</a>
+* :heavy_check_mark: <a href="../graph_template.cpp.html">graph/graph_template.cpp</a>
 
 
 ## Verified with
 
-* :x: <a href="../../../verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/verify/diameter.test.cpp.html">verify/diameter.test.cpp</a>
 
 
 ## Code
