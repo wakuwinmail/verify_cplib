@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :x: test/euler_tour.test.cpp
+# :heavy_check_mark: test/euler_tour.test.cpp
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#098f6bcd4621d373cade4e832627b4f6">test</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/euler_tour.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 14:59:00+09:00
+    - Last commit date: 2020-05-10 15:02:01+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/problems/2871">https://onlinejudge.u-aizu.ac.jp/problems/2871</a>
@@ -39,8 +39,9 @@ layout: default
 
 ## Depends on
 
-* :x: <a href="../../library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
-* :question: <a href="../../library/tree/SegmentTree/lazysegtree.cpp.html">tree/SegmentTree/lazysegtree.cpp</a>
+* :heavy_check_mark: <a href="../../library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
+* :heavy_check_mark: <a href="../../library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
+* :heavy_check_mark: <a href="../../library/tree/SegmentTree/lazysegtree.cpp.html">tree/SegmentTree/lazysegtree.cpp</a>
 
 
 ## Code
@@ -116,6 +117,10 @@ int main(){
 //https://onlinejudge.u-aizu.ac.jp/problems/2871
 #include <vector>
 #include <utility>
+
+#line 1 "graph/graph_template.cpp"
+using Graph=std::vector<std::vector<int>>;//無向グラフ
+#line 6 "graph/euler_tour.cpp"
 
 struct EulerTour{
 private:

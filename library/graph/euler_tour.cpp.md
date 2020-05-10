@@ -25,20 +25,25 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :x: graph/euler_tour.cpp
+# :heavy_check_mark: graph/euler_tour.cpp
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#f8b0b924ebd7046dbfa85a856e4682c8">graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/graph/euler_tour.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 14:59:00+09:00
+    - Last commit date: 2020-05-10 15:02:01+09:00
 
 
+
+
+## Depends on
+
+* :heavy_check_mark: <a href="graph_template.cpp.html">graph/graph_template.cpp</a>
 
 
 ## Verified with
 
-* :x: <a href="../../verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
+* :heavy_check_mark: <a href="../../verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
 
 
 ## Code
@@ -49,6 +54,8 @@ layout: default
 //https://onlinejudge.u-aizu.ac.jp/problems/2871
 #include <vector>
 #include <utility>
+
+#include "graph_template.cpp"
 
 struct EulerTour{
 private:
@@ -90,6 +97,10 @@ public:
 //https://onlinejudge.u-aizu.ac.jp/problems/2871
 #include <vector>
 #include <utility>
+
+#line 1 "graph/graph_template.cpp"
+using Graph=std::vector<std::vector<int>>;//無向グラフ
+#line 6 "graph/euler_tour.cpp"
 
 struct EulerTour{
 private:

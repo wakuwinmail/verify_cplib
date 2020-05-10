@@ -46,8 +46,8 @@ layout: default
 
 ### graph
 
-* :x: <a href="library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
-* :warning: <a href="library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
+* :heavy_check_mark: <a href="library/graph/euler_tour.cpp.html">graph/euler_tour.cpp</a>
+* :heavy_check_mark: <a href="library/graph/graph_template.cpp.html">graph/graph_template.cpp</a>
 * :warning: <a href="library/graph/pertial_persistent_unionfind.cpp.html">graph/pertial_persistent_unionfind.cpp</a>
 * :warning: <a href="library/graph/potentialized_unionfind.cpp.html">graph/potentialized_unionfind.cpp</a>
 * :warning: <a href="library/graph/strongly_conneted_components.cpp.html">graph/strongly_conneted_components.cpp</a>
@@ -109,7 +109,7 @@ layout: default
 ### tree/SegmentTree
 
 * :warning: <a href="library/tree/SegmentTree/abstsegtree.cpp.html">tree/SegmentTree/abstsegtree.cpp</a>
-* :question: <a href="library/tree/SegmentTree/lazysegtree.cpp.html">tree/SegmentTree/lazysegtree.cpp</a>
+* :heavy_check_mark: <a href="library/tree/SegmentTree/lazysegtree.cpp.html">tree/SegmentTree/lazysegtree.cpp</a>
 * :warning: <a href="library/tree/SegmentTree/monoid.cpp.html">tree/SegmentTree/monoid.cpp</a>
 * :warning: <a href="library/tree/SegmentTree/raqlazysegtree.cpp.html">tree/SegmentTree/raqlazysegtree.cpp</a>
 * :heavy_check_mark: <a href="library/tree/SegmentTree/rmqsegtree.cpp.html">tree/SegmentTree/rmqsegtree.cpp</a>
@@ -126,7 +126,7 @@ layout: default
 
 ## Verify Files
 
-* :x: <a href="verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
+* :heavy_check_mark: <a href="verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/lazysegtree.test.cpp.html">test/lazysegtree.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/rmqsegtree.test.cpp.html">test/rmqsegtree.test.cpp</a>
 
