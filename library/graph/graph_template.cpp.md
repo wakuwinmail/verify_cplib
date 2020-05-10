@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#f8b0b924ebd7046dbfa85a856e4682c8">graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/graph/graph_template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-10 14:59:00+09:00
+    - Last commit date: 2020-05-10 15:39:34+09:00
 
 
 
@@ -43,7 +43,7 @@ layout: default
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
+* :heavy_check_mark: <a href="../../verify/verify/euler_tour.test.cpp.html">verify/euler_tour.test.cpp</a>
 
 
 ## Code
@@ -51,6 +51,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+#include <vector>
 using Graph=std::vector<std::vector<int>>;//無向グラフ
 ```
 {% endraw %}
@@ -59,6 +60,7 @@ using Graph=std::vector<std::vector<int>>;//無向グラフ
 {% raw %}
 ```cpp
 #line 1 "graph/graph_template.cpp"
+#include <vector>
 using Graph=std::vector<std::vector<int>>;//無向グラフ
 
 ```

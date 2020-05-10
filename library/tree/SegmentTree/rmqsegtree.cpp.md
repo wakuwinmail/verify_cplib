@@ -31,14 +31,14 @@ layout: default
 
 * category: <a href="../../../index.html#f1973713ea4397a8e0580271720556c9">tree/SegmentTree</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tree/SegmentTree/rmqsegtree.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-05-09 17:55:57+09:00
+    - Last commit date: 2020-05-10 15:39:34+09:00
 
 
 
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../../verify/test/rmqsegtree.test.cpp.html">test/rmqsegtree.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/verify/rmqsegtree.test.cpp.html">verify/rmqsegtree.test.cpp</a>
 
 
 ## Code
@@ -47,6 +47,7 @@ layout: default
 {% raw %}
 ```cpp
 //https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_A
+#pragma once
 #include <vector>
 #include <algorithm>
 #include <cstdint>
@@ -91,46 +92,14 @@ public:
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "tree/SegmentTree/rmqsegtree.cpp"
-//https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_2_A
-#include <vector>
-#include <algorithm>
-#include <cstdint>
-
-template <typename T>
-struct SegmentTree{
-private:
-    int n;
-    T init;
-    std::vector<T> node;
- 
-public:
-    explicit SegmentTree(int sz,T initv=std::numeric_limits<T>::max()){
-        n=1;
-        init=initv;
-        while(n<sz)n=n*2;
-        node.resize(static_cast<unsigned int>(2 * n - 1), init);
-        for (int i = 0; i <sz ; ++i) node[i+n-1]=init;
-        for (int i = n-2; i >= 0 ; --i) node[i]=std::min(node[2*i+1],node[2*i+2]);
-    }
- 
-    void update(int x, T val){//x:0-indexed
-        x+=n-1;
-        node[x]=val;
-        while(x>0){
-            x=(x-1)/2;
-            node[x]=std::min(node[2*x+1],node[2*x+2]);
-        }
-    }
- 
-    T getmin(int p,int q,int k=0,int l=0,int r=-1){//[p,q):0-indexed
-        if(r<0)r=n;
-        if(r<=p||l>=q)return init;//out of range
-        if(p<=l&&r<=q)return node[k];
- 
-        return std::min(getmin(p,q,2*k+1,l,(l+r)/2),getmin(p,q,2*k+2,(l+r)/2,r));
-    }
-};
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.2/x64/lib/python3.8/site-packages/onlinejudge_verify/docs.py", line 349, in write_contents
+    bundled_code = language.bundle(self.file_class.file_path, basedir=pathlib.Path.cwd())
+  File "/opt/hostedtoolcache/Python/3.8.2/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus.py", line 172, in bundle
+    bundler.update(path)
+  File "/opt/hostedtoolcache/Python/3.8.2/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py", line 214, in update
+    raise BundleError(path, i + 1, "#pragma once found in a non-first line")
+onlinejudge_verify.languages.cplusplus_bundle.BundleError: tree/SegmentTree/rmqsegtree.cpp: line 2: #pragma once found in a non-first line
 
 ```
 {% endraw %}

@@ -126,8 +126,8 @@ layout: default
 
 ## Verify Files
 
-* :heavy_check_mark: <a href="verify/test/euler_tour.test.cpp.html">test/euler_tour.test.cpp</a>
-* :heavy_check_mark: <a href="verify/test/lazysegtree.test.cpp.html">test/lazysegtree.test.cpp</a>
-* :heavy_check_mark: <a href="verify/test/rmqsegtree.test.cpp.html">test/rmqsegtree.test.cpp</a>
+* :heavy_check_mark: <a href="verify/verify/euler_tour.test.cpp.html">verify/euler_tour.test.cpp</a>
+* :heavy_check_mark: <a href="verify/verify/lazysegtree.test.cpp.html">verify/lazysegtree.test.cpp</a>
+* :heavy_check_mark: <a href="verify/verify/rmqsegtree.test.cpp.html">verify/rmqsegtree.test.cpp</a>
 
 
